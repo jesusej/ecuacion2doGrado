@@ -167,6 +167,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rt0-Lf-tbv" userLabel="Solving Button">
                                                         <rect key="frame" x="132" y="12.5" width="88" height="25.5"/>
                                                         <state key="normal" title="Resolver"/>
+                                                        <connections>
+                                                            <action selector="solvingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WZE-OE-HWk"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
@@ -278,6 +281,13 @@
                             <constraint firstItem="oiC-dV-pqm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.85" id="vKU-6r-YMc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="inputEcuationA" destination="jXu-KA-nkW" id="ACs-Br-pu2"/>
+                        <outlet property="inputEcuationB" destination="NTt-VD-mes" id="YVu-TJ-h2W"/>
+                        <outlet property="inputEcuationC" destination="FtE-yW-Egu" id="EBC-vj-OTN"/>
+                        <outlet property="inputRoot1" destination="dcN-FU-Z0l" id="eyt-43-A4N"/>
+                        <outlet property="inputRoot2" destination="sZr-yG-7ck" id="fBL-of-JcU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
