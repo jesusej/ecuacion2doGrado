@@ -4,6 +4,8 @@
 //
 //  Created by user194082 on 8/29/21.
 //
+//  Base class of all the movement of the ecuation solver
+//  Saves the values of a,b,c of the ecuation and the roots
 
 import Foundation
 

@@ -27,9 +27,11 @@ class ViewController: UIViewController {
         inputRoot1.text = ""
         inputRoot2.text = ""
         
+        // To let the ecuationSolver to work all the inputs must not be empty and the a value must not be equal to 0
+        // If the other case it prints a message to the console or creates an alert, respectively
         if let a = inputEcuationA.text, let b = inputEcuationB.text, let c = inputEcuationC.text {
             if (!a.isEmpty || !b.isEmpty || !c.isEmpty) {
-                if(Int(a) != 0 || Float(a) != 0.0) {
+                if(Int(a) != 0) {
                     let rootsValue = ecuationsolver.convert(ecuation: Ecuation(a: Float16(a)!, b: Float16(b)!, c: Float16(c)!, r1: "", r2: ""))
                     print("Root 1: " + String(rootsValue.r1) + " Root 2: " + String(rootsValue.r2))
                     inputRoot1.text = String(rootsValue.r1)
