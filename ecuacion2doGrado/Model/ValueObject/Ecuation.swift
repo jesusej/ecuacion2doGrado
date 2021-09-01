@@ -11,10 +11,10 @@ public class Ecuation {
     public let a: Float16;
     public let b: Float16;
     public let c: Float16;
-    public let r1: Float16;
-    public let r2: Float16;
+    public let r1: String;
+    public let r2: String;
     
-    public init(a: Float16, b: Float16, c: Float16, r1: Float16, r2: Float16) {
+    public init(a: Float16, b: Float16, c: Float16, r1: String, r2: String) {
         self.a = a;
         self.b = b;
         self.c = c;

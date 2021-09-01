@@ -70,7 +70,7 @@
                                                         <rect key="frame" x="28" y="12" width="263" height="26"/>
                                                         <accessibility key="accessibilityConfiguration" label="InputA"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
@@ -98,7 +98,7 @@
                                                         <rect key="frame" x="28" y="12" width="260" height="26"/>
                                                         <accessibility key="accessibilityConfiguration" label="InputA"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>
@@ -126,7 +126,7 @@
                                                         <rect key="frame" x="28" y="13" width="263" height="26"/>
                                                         <accessibility key="accessibilityConfiguration" label="InputA"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemGray6Color"/>

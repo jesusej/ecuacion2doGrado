@@ -22,21 +22,30 @@ class ecuacion2doGradoUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
+    func testSolverWithDiscUI() throws {
+            // UI tests must launch the application that they test.
+            let app = XCUIApplication()
+            app.launch()
+            
+        
+            let inputEcuationA = app.textFields["Input Ecuation A"]
+            let inputEcuationB = app.textFields["Input Ecuation B"]
+            let inputEcuationC = app.textFields["Input Ecuation C"]
+            let inputRoot1 = app.textFields["Input Root 1"]
+            let inputRoot2 = app.textFields["Input Root 2"]
+            
+            inputEcuationA.tap()
+            inputEcuationA.typeText("1")
+            inputEcuationB.tap()
+            inputEcuationB.typeText("5")
+            inputEcuationC.tap()
+            inputEcuationC.typeText("6")
+            app.staticTexts["Resolver"].tap()
+            
+            print("Input Root 1: " + (inputRoot1.value as! String))
+            print("Input Root 2: " + (inputRoot2.value as! String))
+            
+            XCTAssertEqual(inputRoot1.value as! String, "-2.00")
+            XCTAssertEqual(inputRoot2.value as! String, "-3.00")
         }
-    }
 }

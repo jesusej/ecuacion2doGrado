@@ -29,7 +29,16 @@ class ViewController: UIViewController {
         
         if let a = inputEcuationA.text, let b = inputEcuationB.text, let c = inputEcuationC.text {
             if (!a.isEmpty || !b.isEmpty || !c.isEmpty) {
-                let rootsValue = ecuationsolver.convert(ecuation: Ecuation(a: Float16(a)!, b: Float16(b)!, c: Float16(c)!, r1: 0.0, r2: 0.0))
+                if(Int(a) != 0 || Float(a) != 0.0) {
+                    let rootsValue = ecuationsolver.convert(ecuation: Ecuation(a: Float16(a)!, b: Float16(b)!, c: Float16(c)!, r1: "", r2: ""))
+                    print("Root 1: " + String(rootsValue.r1) + " Root 2: " + String(rootsValue.r2))
+                    inputRoot1.text = String(rootsValue.r1)
+                    inputRoot2.text = String(rootsValue.r2)
+                } else {
+                    let alertController = UIAlertController(title: "Aviso", message: "No es una ecuacion de segundo grado", preferredStyle: UIAlertController.Style.alert)
+                    alertController.addAction(UIAlertAction(title: "Aceptar", style: UIAlertAction.Style.default, handler: nil))
+                    present(alertController, animated: true, completion: nil)
+                }
             } else {
                 print("At least one of the values is empty")
             }

@@ -14,28 +14,42 @@ class ecuacion2doGradoTests: XCTestCase {
     
     func testSolverWithoutDisc() throws {
         // Given
-        let input = Ecuation(a: 2, b: 4, c: 2, r1: 0, r2: 0)
+        let input = Ecuation(a: 2, b: 4, c: 2, r1: "", r2: "")
         
         // When
         let result = ecuationsolver.convert(ecuation: input)
         
         // Then
-        let expectedRoot1: Float16 = -1
-        let expectedRoot2: Float16 = -1
+        let expectedRoot1: String = "-1.0"
+        let expectedRoot2: String = "-1.0"
         XCTAssertEqual(result.r1, expectedRoot1)
         XCTAssertEqual(result.r2, expectedRoot2)
     }
 
     func testSolverWithPositiveDisc() throws {
         // Given
-        let input = Ecuation(a: 1, b: 5, c: 6, r1: 0, r2: 0)
+        let input = Ecuation(a: 1, b: 5, c: 6, r1: "", r2: "")
         
         // When
         let result = ecuationsolver.convert(ecuation: input)
         
         // Then
-        let expectedRoot1: Float16 = -2
-        let expectedRoot2: Float16 = -3
+        let expectedRoot1: String = "-2.0"
+        let expectedRoot2: String = "-3.0"
+        XCTAssertEqual(result.r1, expectedRoot1)
+        XCTAssertEqual(result.r2, expectedRoot2)
+    }
+    
+    func testSolverWithNegativeDisc() throws {
+        // Given
+        let input = Ecuation(a: 1, b: 1, c: 1, r1: "", r2: "")
+        
+        // When
+        let result = ecuationsolver.convert(ecuation: input)
+        
+        // Then
+        let expectedRoot1: String = "-0.50 + 0.87i"
+        let expectedRoot2: String = "-0.50 - 0.87i"
         XCTAssertEqual(result.r1, expectedRoot1)
         XCTAssertEqual(result.r2, expectedRoot2)
     }
