@@ -10,24 +10,33 @@ import XCTest
 
 class ecuacion2doGradoTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    let ecuationsolver = EcuationSolver();
+    
+    func testSolverWithoutDisc() throws {
+        // Given
+        let input = Ecuation(a: 2, b: 4, c: 2, r1: 0, r2: 0)
+        
+        // When
+        let result = ecuationsolver.convert(ecuation: input)
+        
+        // Then
+        let expectedRoot1: Float16 = -1
+        let expectedRoot2: Float16 = -1
+        XCTAssertEqual(result.r1, expectedRoot1)
+        XCTAssertEqual(result.r2, expectedRoot2)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testSolverWithPositiveDisc() throws {
+        // Given
+        let input = Ecuation(a: 1, b: 5, c: 6, r1: 0, r2: 0)
+        
+        // When
+        let result = ecuationsolver.convert(ecuation: input)
+        
+        // Then
+        let expectedRoot1: Float16 = -2
+        let expectedRoot2: Float16 = -3
+        XCTAssertEqual(result.r1, expectedRoot1)
+        XCTAssertEqual(result.r2, expectedRoot2)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

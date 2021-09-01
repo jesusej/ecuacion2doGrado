@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A8F147826DEEAD800C49B5B /* EcuationSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F147726DEEAD800C49B5B /* EcuationSolver.swift */; };
+		8A8F147C26DEF02100C49B5B /* EcuationSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F147726DEEAD800C49B5B /* EcuationSolver.swift */; };
+		8A8F148026DEF02100C49B5B /* EcuationSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8F147726DEEAD800C49B5B /* EcuationSolver.swift */; };
+		8A8F148426DEF02500C49B5B /* Ecuation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB2CFFD26DB4FCB00E14F1D /* Ecuation.swift */; };
+		8A8F148826DEF02600C49B5B /* Ecuation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB2CFFD26DB4FCB00E14F1D /* Ecuation.swift */; };
 		8AB2CFFE26DB4FCB00E14F1D /* Ecuation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB2CFFD26DB4FCB00E14F1D /* Ecuation.swift */; };
 		8AEF4F4B26D85E50003EE776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEF4F4A26D85E50003EE776 /* AppDelegate.swift */; };
 		8AEF4F4D26D85E50003EE776 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEF4F4C26D85E50003EE776 /* SceneDelegate.swift */; };
@@ -36,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A8F147726DEEAD800C49B5B /* EcuationSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcuationSolver.swift; sourceTree = "<group>"; };
 		8AB2CFFD26DB4FCB00E14F1D /* Ecuation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecuation.swift; sourceTree = "<group>"; };
 		8AEF4F4726D85E50003EE776 /* ecuacion2doGrado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ecuacion2doGrado.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AEF4F4A26D85E50003EE776 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,9 +84,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A8F147626DEEA0E00C49B5B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8A8F147726DEEAD800C49B5B /* EcuationSolver.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		8AB2CFFB26DB4F8B00E14F1D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8A8F147626DEEA0E00C49B5B /* Tools */,
 				8AB2CFFC26DB4F9C00E14F1D /* ValueObject */,
 			);
 			path = Model;
@@ -279,6 +294,7 @@
 			files = (
 				8AEF4F4F26D85E50003EE776 /* ViewController.swift in Sources */,
 				8AB2CFFE26DB4FCB00E14F1D /* Ecuation.swift in Sources */,
+				8A8F147826DEEAD800C49B5B /* EcuationSolver.swift in Sources */,
 				8AEF4F4B26D85E50003EE776 /* AppDelegate.swift in Sources */,
 				8AEF4F4D26D85E50003EE776 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,6 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A8F148426DEF02500C49B5B /* Ecuation.swift in Sources */,
+				8A8F147C26DEF02100C49B5B /* EcuationSolver.swift in Sources */,
 				8AEF4F6226D85E51003EE776 /* ecuacion2doGradoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +314,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A8F148826DEF02600C49B5B /* Ecuation.swift in Sources */,
+				8A8F148026DEF02100C49B5B /* EcuationSolver.swift in Sources */,
 				8AEF4F6D26D85E51003EE776 /* ecuacion2doGradoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
