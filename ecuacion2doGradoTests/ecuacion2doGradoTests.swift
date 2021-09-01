@@ -20,8 +20,8 @@ class ecuacion2doGradoTests: XCTestCase {
         let result = ecuationsolver.convert(ecuation: input)
         
         // Then
-        let expectedRoot1: String = "-1.0"
-        let expectedRoot2: String = "-1.0"
+        let expectedRoot1: String = "-1.00"
+        let expectedRoot2: String = "-1.00"
         XCTAssertEqual(result.r1, expectedRoot1)
         XCTAssertEqual(result.r2, expectedRoot2)
     }
@@ -34,8 +34,8 @@ class ecuacion2doGradoTests: XCTestCase {
         let result = ecuationsolver.convert(ecuation: input)
         
         // Then
-        let expectedRoot1: String = "-2.0"
-        let expectedRoot2: String = "-3.0"
+        let expectedRoot1: String = "-2.00"
+        let expectedRoot2: String = "-3.00"
         XCTAssertEqual(result.r1, expectedRoot1)
         XCTAssertEqual(result.r2, expectedRoot2)
     }

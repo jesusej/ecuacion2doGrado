@@ -96,7 +96,7 @@
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTt-VD-mes" userLabel="Input Ecuation B">
                                                         <rect key="frame" x="28" y="12" width="260" height="26"/>
-                                                        <accessibility key="accessibilityConfiguration" label="InputA"/>
+                                                        <accessibility key="accessibilityConfiguration" label="InputB"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
@@ -124,7 +124,7 @@
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FtE-yW-Egu" userLabel="Input Ecuation C">
                                                         <rect key="frame" x="28" y="13" width="263" height="26"/>
-                                                        <accessibility key="accessibilityConfiguration" label="InputA"/>
+                                                        <accessibility key="accessibilityConfiguration" label="InputC"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
@@ -191,7 +191,7 @@
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dcN-FU-Z0l" userLabel="Input Root 1">
                                                         <rect key="frame" x="60" y="13" width="239.5" height="25"/>
-                                                        <accessibility key="accessibilityConfiguration" label="InputA"/>
+                                                        <accessibility key="accessibilityConfiguration" label="InputR1"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -219,7 +219,7 @@
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sZr-yG-7ck" userLabel="Input Root 2">
                                                         <rect key="frame" x="60" y="12.5" width="239.5" height="25.5"/>
-                                                        <accessibility key="accessibilityConfiguration" label="InputA"/>
+                                                        <accessibility key="accessibilityConfiguration" label="InputR2"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>

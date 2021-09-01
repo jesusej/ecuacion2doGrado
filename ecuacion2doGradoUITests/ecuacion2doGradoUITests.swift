@@ -28,11 +28,11 @@ class ecuacion2doGradoUITests: XCTestCase {
             app.launch()
             
         
-            let inputEcuationA = app.textFields["Input Ecuation A"]
-            let inputEcuationB = app.textFields["Input Ecuation B"]
-            let inputEcuationC = app.textFields["Input Ecuation C"]
-            let inputRoot1 = app.textFields["Input Root 1"]
-            let inputRoot2 = app.textFields["Input Root 2"]
+            let inputEcuationA = app.textFields["InputA"]
+            let inputEcuationB = app.textFields["InputB"]
+            let inputEcuationC = app.textFields["InputC"]
+            let inputRoot1 = app.textFields["InputR1"]
+            let inputRoot2 = app.textFields["InputR2"]
             
             inputEcuationA.tap()
             inputEcuationA.typeText("1")
@@ -48,4 +48,25 @@ class ecuacion2doGradoUITests: XCTestCase {
             XCTAssertEqual(inputRoot1.value as! String, "-2.00")
             XCTAssertEqual(inputRoot2.value as! String, "-3.00")
         }
+    
+    func testSolverWithAEqual0() throws {
+        // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+        
+    
+        let inputEcuationA = app.textFields["InputA"]
+        let inputEcuationB = app.textFields["InputB"]
+        let inputEcuationC = app.textFields["InputC"]
+        
+        inputEcuationA.tap()
+        inputEcuationA.typeText("0")
+        inputEcuationB.tap()
+        inputEcuationB.typeText("5")
+        inputEcuationC.tap()
+        inputEcuationC.typeText("6")
+        app.staticTexts["Resolver"].tap()
+        
+        XCTAssert(app.alerts.element.staticTexts["No es una ecuacion de segundo grado"].exists)
+    }
 }
